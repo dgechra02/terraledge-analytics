@@ -9,7 +9,7 @@ export default function Home() {
       </h1>
       <Link href='./analytics' className="ml-4 rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700">
         <span className="flex gap-3">
-          Vieiw Analytics <MoveRightIcon />
+          View Analytics <MoveRightIcon />
       </span>
       </Link>
     </div>
