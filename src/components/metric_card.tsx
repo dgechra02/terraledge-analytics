@@ -1,6 +1,7 @@
 // @ts-nocheck
 
 import { ArrowUpRight, ArrowDownRight } from 'lucide-react';
+import AnimateValue from './animate_value';
 
 export default function MetricCard({ mounted, setActiveCard, activeCard, metric, idx }) {
     return (
@@ -26,7 +27,7 @@ export default function MetricCard({ mounted, setActiveCard, activeCard, metric,
                     </div>
                     <div>
                         <p className="text-slate-400 text-xs sm:text-sm mb-1 sm:mb-2 font-medium">{metric.title}</p>
-                        <p className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight">{metric.value}</p>
+                        <AnimateValue value={metric.valueNumeric} duration={1500} suffix={metric.suffix} prefix={metric.prefix} />
                     </div>
 
                     <div className="mt-3 sm:mt-4 h-1.5 sm:h-2 bg-slate-800/50 rounded-full overflow-hidden">

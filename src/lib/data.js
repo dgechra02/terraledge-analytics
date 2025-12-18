@@ -53,6 +53,9 @@ export const metrics = [
   {
     title: "Total Volume",
     value: "$2.4M",
+    valueNumeric: 2.4,
+    prefix: "$",
+    suffix: "M",
     change: "+18.2%",
     icon: Wallet,
     positive: true,
@@ -60,6 +63,9 @@ export const metrics = [
   {
     title: "Active Accounts",
     value: "18,943",
+    valueNumeric: 18943,
+    prefix: "",
+    suffix: "",
     change: "+12.8%",
     icon: Users,
     positive: true,
@@ -67,6 +73,9 @@ export const metrics = [
   {
     title: "Success Rate",
     value: "99.2%",
+    valueNumeric: 99.2,
+    prefix: "",
+    suffix: "%",
     change: "+3.4%",
     icon: Target,
     positive: true,
@@ -74,8 +83,12 @@ export const metrics = [
   {
     title: "Avg Transaction",
     value: "$842",
+    valueNumeric: 842,
+    prefix: "$",
+    suffix: "",
     change: "+7.6%",
     icon: Zap,
     positive: true,
   },
 ];
+
